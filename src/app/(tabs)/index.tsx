@@ -1,12 +1,5 @@
-import ProductListItem from "@/src/components/ProductListItem";
-import React from "react";
+import { Redirect } from "expo-router";
 
-import products from "@/src/data/products";
-export default function MenuScreen() {
-	return (
-		<>
-			<ProductListItem product={products[0]} />
-			<ProductListItem product={products[1]} />
-		</>
-	);
+export default function TabIndex() {
+	return <Redirect href={"/menu/"} />;
 }

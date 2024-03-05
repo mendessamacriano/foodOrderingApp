@@ -27,12 +27,13 @@ export default function TabLayout() {
 				headerShown: useClientOnlyValue(false, true),
 			}}
 		>
+			<Tabs.Screen name="index" options={{ href: null }} />
 			<Tabs.Screen
-				name="index"
+				name="menu"
 				options={{
 					title: "Menu",
 					tabBarIcon: ({ color }) => (
-						<TabBarIcon name="code" color={color} />
+						<TabBarIcon name="cutlery" color={color} />
 					),
 					headerRight: () => (
 						<Link href="/modal" asChild>
@@ -58,9 +59,9 @@ export default function TabLayout() {
 			<Tabs.Screen
 				name="two"
 				options={{
-					title: "Tab Two",
+					title: "Orders",
 					tabBarIcon: ({ color }) => (
-						<TabBarIcon name="code" color={color} />
+						<TabBarIcon name="list" color={color} />
 					),
 				}}
 			/>
